@@ -15,6 +15,10 @@ FinalProject.srcs:
 
 This folder contains the newest files that we created for the optimization of the processors speed and resource usage. The forwarding unit (Forward.v) eliminated dependencies present in closely timed instructions that utilized the same registers. Any dependency cases that the forwarding unit could not resolve, the hazard detection unit (HazardDetection.v) took care of. Finally, the data memory unit (data_memory.v) was used to store all the arithmetic and resulting register values. 
 
+VBSME: 
+
+All the files associated with the completion of the Variable Block Size Motion Estimation (VBSME) are included here. First the problem outlined in vbsme.docx was tackled in C++ in the vbsme.c and vbsme.cpp files. Once an accurate computation of the Sum of Absolute Difference for each location in different sized grids was achieved in C++, the problem was then solved in MIPS assembly language located in the vbsme.s file. 
+
 FinalProject.xpr:
 
 This opens up the vivado design suite and adds all the files to the verilog project.
