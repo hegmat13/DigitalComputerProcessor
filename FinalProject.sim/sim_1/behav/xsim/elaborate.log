@@ -1,0 +1,45 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 88b0f248013047e4a8eb7b2f4844baa8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Datapath_tb_behav xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 6 for port ALUControl [C:/Users/matth/Documents/ECE 369A Computer Fundamentals/FinalProject/Files for Labs 1-18/Datapath.v:101]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port out [C:/Users/matth/Documents/ECE 369A Computer Fundamentals/FinalProject/Files for Labs 1-18/Datapath.v:103]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 64 for port inD [C:/Users/matth/Documents/ECE 369A Computer Fundamentals/FinalProject/Files for Labs 1-18/Datapath.v:131]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port MEWriteReg [C:/Users/matth/Documents/ECE 369A Computer Fundamentals/FinalProject/Files for Labs 1-18/Datapath.v:140]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port MEWriteReg [C:/Users/matth/Documents/ECE 369A Computer Fundamentals/FinalProject/Files for Labs 1-18/Datapath.v:151]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port MEWriteReg [C:/Users/matth/Documents/ECE 369A Computer Fundamentals/FinalProject/Files for Labs 1-18/Datapath.v:177]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port MEWriteReg [C:/Users/matth/Documents/ECE 369A Computer Fundamentals/FinalProject/Files for Labs 1-18/Datapath.v:179]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port out [C:/Users/matth/Documents/ECE 369A Computer Fundamentals/FinalProject/Files for Labs 1-18/Datapath.v:105]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port out [C:/Users/matth/Documents/ECE 369A Computer Fundamentals/FinalProject/Files for Labs 1-18/Datapath.v:107]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDiv
+Compiling module xil_defaultlib.SevenSegment
+Compiling module xil_defaultlib.TwoDigitDisplay
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.IFIDRegister
+Compiling module xil_defaultlib.ALU32Bit
+Compiling module xil_defaultlib.Mux32Bit2To1
+Compiling module xil_defaultlib.SignExtension
+Compiling module xil_defaultlib.SignExtension8bit
+Compiling module xil_defaultlib.Mux32Bit4To1
+Compiling module xil_defaultlib.Mux64Bit4To1
+Compiling module xil_defaultlib.HiLoRegister
+Compiling module xil_defaultlib.EXMERegister
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEWBRegister
+Compiling module xil_defaultlib.PCAdder
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.BranchComparator
+Compiling module xil_defaultlib.IDEXRegister
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.Forward
+Compiling module xil_defaultlib.HazardDetection
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_behav

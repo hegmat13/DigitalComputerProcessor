@@ -1,0 +1,73 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 88b0f248013047e4a8eb7b2f4844baa8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot Datapath_tb_func_impl xil_defaultlib.Datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.PCAdder
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module xil_defaultlib.Mux32Bit2To1
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.latchsre_ldce
+Compiling module unisims_ver.LDCE
+Compiling module xil_defaultlib.ALU32Bit__1
+Compiling module xil_defaultlib.BranchComparator
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.latchsre_ldpe
+Compiling module unisims_ver.LDPE
+Compiling module xil_defaultlib.Controller
+Compiling module unisims_ver.RAM32X1S
+Compiling module unisims_ver.RAM256X1S
+Compiling module xil_defaultlib.DataMemory
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.FDRE(IS_C_INVERTED=1'b1)
+Compiling module xil_defaultlib.EXMERegister
+Compiling module xil_defaultlib.Forward
+Compiling module xil_defaultlib.HazardDetection
+Compiling module xil_defaultlib.HiLoRegister
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.GND
+Compiling module xil_defaultlib.IDEXRegister
+Compiling module xil_defaultlib.IFIDRegister
+Compiling module unisims_ver.MUXF8
+Compiling module unisims_ver.MUXF7
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.Mux32Bit4To1__6
+Compiling module xil_defaultlib.MEWBRegister
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module xil_defaultlib.ALU32Bit
+Compiling module xil_defaultlib.Mux32Bit4To1__8
+Compiling module xil_defaultlib.Mux32Bit4To1__4
+Compiling module xil_defaultlib.Mux32Bit4To1__2
+Compiling module xil_defaultlib.Mux32Bit4To1__3
+Compiling module xil_defaultlib.Mux32Bit4To1__7
+Compiling module xil_defaultlib.Mux64Bit4To1
+Compiling module xil_defaultlib.Mux32Bit2To1_0
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.Mux32Bit2To1_1
+Compiling module xil_defaultlib.Mux32Bit4To1__9
+Compiling module xil_defaultlib.Mux32Bit4To1
+Compiling module xil_defaultlib.Mux32Bit4To1__5
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Mux32Bit2To1_2
+Compiling module xil_defaultlib.Mux32Bit4To1__1
+Compiling module xil_defaultlib.Mux32Bit2To1_3
+Compiling module xil_defaultlib.Mux32Bit2To1_4
+Compiling module xil_defaultlib.Mux32Bit2To1_5
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_tb_func_impl

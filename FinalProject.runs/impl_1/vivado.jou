@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jan 27 12:30:18 2020
+# Process ID: 11820
+# Current directory: C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.runs/impl_1
+# Command line: vivado.exe -log Datapath.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Datapath.tcl -notrace
+# Log file: C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.runs/impl_1/Datapath.vdi
+# Journal file: C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Datapath.tcl -notrace

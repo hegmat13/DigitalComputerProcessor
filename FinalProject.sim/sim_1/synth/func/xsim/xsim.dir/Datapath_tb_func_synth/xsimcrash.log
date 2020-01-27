@@ -1,0 +1,10 @@
+Exception at PC 0x00007FFA2F43180C
+Attemped to write at address 0x0000000000000000
+Printing stacktrace...
+
+[0] (memset+0x16c) [0x00007FFA2F43180C]
+[1] (memset+0x16c) [0x00007FFA2F43180C]
+[2] (iki_calloca8+0x21) [0x00007FF9F5829421]
+[3] (vlog_timingcheck_execute_0+0x229a) [0x00007FF9F580132A]
+[4]  [0x00000000004C36ED]
+Done

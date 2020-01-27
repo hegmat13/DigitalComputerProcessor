@@ -1,0 +1,683 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Jan 27 12:31:45 2020
+| Host         : DESKTOP-TVROL71 running 64-bit major release  (build 9200)
+| Command      : report_drc -file Datapath_drc_routed.rpt -pb Datapath_drc_routed.pb -rpx Datapath_drc_routed.rpx
+| Design       : Datapath
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 126
++-----------+------------------+-----------------------------------------------------+------------+
+| Rule      | Severity         | Description                                         | Violations |
++-----------+------------------+-----------------------------------------------------+------------+
+| LUTLP-1   | Critical Warning | Combinatorial Loop Alert                            | 67         |
+| NSTD-1    | Critical Warning | Unspecified I/O Standard                            | 1          |
+| UCIO-1    | Critical Warning | Unconstrained Logical Port                          | 1          |
+| CFGBVS-1  | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| DPIP-1    | Warning          | Input pipelining                                    | 19         |
+| DPOP-1    | Warning          | PREG Output pipelining                              | 8          |
+| DPOP-2    | Warning          | MREG Output pipelining                              | 8          |
+| PDRC-63   | Warning          | SLICEM_5lutO5_A5                                    | 2          |
+| PDRC-153  | Warning          | Gated clock check                                   | 18         |
+| RTSTAT-10 | Warning          | No routable loads                                   | 1          |
++-----------+------------------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTLP-1#1 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult[11]. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_21, BranchALU/ALUResult_inferred_i_99, BranchALU/ALUResult_inferred_i_263.
+Related violations: <none>
+
+LUTLP-1#2 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult[13]. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_19, BranchALU/ALUResult_inferred_i_92, BranchALU/ALUResult_inferred_i_253.
+Related violations: <none>
+
+LUTLP-1#3 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult[14]. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_18, BranchALU/ALUResult_inferred_i_88, BranchALU/ALUResult_inferred_i_89.
+Related violations: <none>
+
+LUTLP-1#4 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult[15]. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_17, BranchALU/ALUResult_inferred_i_85, BranchALU/ALUResult_inferred_i_239.
+Related violations: <none>
+
+LUTLP-1#5 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult[20]. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_12, BranchALU/ALUResult_inferred_i_70, BranchALU/ALUResult_inferred_i_210.
+Related violations: <none>
+
+LUTLP-1#6 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult[21]. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_11, BranchALU/ALUResult_inferred_i_67, BranchALU/ALUResult_inferred_i_205.
+Related violations: <none>
+
+LUTLP-1#7 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult[22]. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_10, BranchALU/ALUResult_inferred_i_64, BranchALU/ALUResult_inferred_i_199.
+Related violations: <none>
+
+LUTLP-1#8 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_102_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_22, BranchALU/ALUResult_inferred_i_102, BranchALU/ALUResult_inferred_i_269.
+Related violations: <none>
+
+LUTLP-1#9 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_105_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_23, BranchALU/ALUResult_inferred_i_105, BranchALU/ALUResult_inferred_i_274.
+Related violations: <none>
+
+LUTLP-1#10 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_106_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_24, BranchALU/ALUResult_inferred_i_106, BranchALU/ALUResult_inferred_i_276.
+Related violations: <none>
+
+LUTLP-1#11 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_109_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_25, BranchALU/ALUResult_inferred_i_109, BranchALU/ALUResult_inferred_i_283.
+Related violations: <none>
+
+LUTLP-1#12 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_120_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_27, BranchALU/ALUResult_inferred_i_120, BranchALU/ALUResult_inferred_i_121.
+Related violations: <none>
+
+LUTLP-1#13 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_125_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_28, BranchALU/ALUResult_inferred_i_125, BranchALU/ALUResult_inferred_i_126.
+Related violations: <none>
+
+LUTLP-1#14 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_129_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_29, BranchALU/ALUResult_inferred_i_129, BranchALU/ALUResult_inferred_i_314.
+Related violations: <none>
+
+LUTLP-1#15 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_133_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_30, BranchALU/ALUResult_inferred_i_133, BranchALU/ALUResult_inferred_i_134.
+Related violations: <none>
+
+LUTLP-1#16 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_139_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_31, BranchALU/ALUResult_inferred_i_139, BranchALU/ALUResult_inferred_i_334.
+Related violations: <none>
+
+LUTLP-1#17 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_143_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_32, BranchALU/ALUResult_inferred_i_143, BranchALU/ALUResult_inferred_i_144.
+Related violations: <none>
+
+LUTLP-1#18 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_188_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_8, BranchALU/ALUResult_inferred_i_58, BranchALU/ALUResult_inferred_i_188.
+Related violations: <none>
+
+LUTLP-1#19 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_193_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_9, BranchALU/ALUResult_inferred_i_61, BranchALU/ALUResult_inferred_i_193.
+Related violations: <none>
+
+LUTLP-1#20 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult[11]. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_21, MainALU/ALUResult_inferred_i_99, MainALU/ALUResult_inferred_i_263.
+Related violations: <none>
+
+LUTLP-1#21 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult[13]. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_19, MainALU/ALUResult_inferred_i_92, MainALU/ALUResult_inferred_i_253.
+Related violations: <none>
+
+LUTLP-1#22 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult[14]. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_18, MainALU/ALUResult_inferred_i_88, MainALU/ALUResult_inferred_i_89.
+Related violations: <none>
+
+LUTLP-1#23 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult[15]. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_17, MainALU/ALUResult_inferred_i_85, MainALU/ALUResult_inferred_i_239.
+Related violations: <none>
+
+LUTLP-1#24 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult[20]. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_12, MainALU/ALUResult_inferred_i_70, MainALU/ALUResult_inferred_i_210.
+Related violations: <none>
+
+LUTLP-1#25 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult[21]. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_11, MainALU/ALUResult_inferred_i_67, MainALU/ALUResult_inferred_i_205.
+Related violations: <none>
+
+LUTLP-1#26 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult[22]. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_10, MainALU/ALUResult_inferred_i_64, MainALU/ALUResult_inferred_i_199.
+Related violations: <none>
+
+LUTLP-1#27 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_102_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_22, MainALU/ALUResult_inferred_i_102, MainALU/ALUResult_inferred_i_269.
+Related violations: <none>
+
+LUTLP-1#28 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_105_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_23, MainALU/ALUResult_inferred_i_105, MainALU/ALUResult_inferred_i_274.
+Related violations: <none>
+
+LUTLP-1#29 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_106_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_24, MainALU/ALUResult_inferred_i_106, MainALU/ALUResult_inferred_i_276.
+Related violations: <none>
+
+LUTLP-1#30 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_109_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_25, MainALU/ALUResult_inferred_i_109, MainALU/ALUResult_inferred_i_283.
+Related violations: <none>
+
+LUTLP-1#31 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_120_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_27, MainALU/ALUResult_inferred_i_120, MainALU/ALUResult_inferred_i_121.
+Related violations: <none>
+
+LUTLP-1#32 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_125_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_28, MainALU/ALUResult_inferred_i_125, MainALU/ALUResult_inferred_i_126.
+Related violations: <none>
+
+LUTLP-1#33 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_129_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_29, MainALU/ALUResult_inferred_i_129, MainALU/ALUResult_inferred_i_314.
+Related violations: <none>
+
+LUTLP-1#34 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_133_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_30, MainALU/ALUResult_inferred_i_133, MainALU/ALUResult_inferred_i_134.
+Related violations: <none>
+
+LUTLP-1#35 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_139_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_31, MainALU/ALUResult_inferred_i_139, MainALU/ALUResult_inferred_i_334.
+Related violations: <none>
+
+LUTLP-1#36 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_143_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_32, MainALU/ALUResult_inferred_i_143, MainALU/ALUResult_inferred_i_144.
+Related violations: <none>
+
+LUTLP-1#37 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_188_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_8, MainALU/ALUResult_inferred_i_58, MainALU/ALUResult_inferred_i_188.
+Related violations: <none>
+
+LUTLP-1#38 Critical Warning
+Combinatorial Loop Alert  
+3 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_193_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_9, MainALU/ALUResult_inferred_i_61, MainALU/ALUResult_inferred_i_193.
+Related violations: <none>
+
+LUTLP-1#39 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult[12]. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_20, BranchALU/ALUResult_inferred_i_93, BranchALU/ALUResult_inferred_i_94, BranchALU/ALUResult_inferred_i_254.
+Related violations: <none>
+
+LUTLP-1#40 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult[16]. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_16, BranchALU/ALUResult_inferred_i_80, BranchALU/ALUResult_inferred_i_229, BranchALU/ALUResult_inferred_i_230.
+Related violations: <none>
+
+LUTLP-1#41 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult[17]. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_15, BranchALU/ALUResult_inferred_i_79, BranchALU/ALUResult_inferred_i_227, BranchALU/ALUResult_inferred_i_228.
+Related violations: <none>
+
+LUTLP-1#42 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult[18]. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_14, BranchALU/ALUResult_inferred_i_74, BranchALU/ALUResult_inferred_i_217, BranchALU/ALUResult_inferred_i_218.
+Related violations: <none>
+
+LUTLP-1#43 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult[31]. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_1, BranchALU/ALUResult_inferred_i_33, BranchALU/ALUResult_inferred_i_145, BranchALU/ALUResult_inferred_i_146.
+Related violations: <none>
+
+LUTLP-1#44 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_112_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_26, BranchALU/ALUResult_inferred_i_112, BranchALU/ALUResult_inferred_i_113, BranchALU/ALUResult_inferred_i_289.
+Related violations: <none>
+
+LUTLP-1#45 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_152_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_2, BranchALU/ALUResult_inferred_i_36, BranchALU/ALUResult_inferred_i_152, BranchALU/ALUResult_inferred_i_153.
+Related violations: <none>
+
+LUTLP-1#46 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_158_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_3, BranchALU/ALUResult_inferred_i_39, BranchALU/ALUResult_inferred_i_158, BranchALU/ALUResult_inferred_i_159.
+Related violations: <none>
+
+LUTLP-1#47 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_164_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_4, BranchALU/ALUResult_inferred_i_42, BranchALU/ALUResult_inferred_i_164, BranchALU/ALUResult_inferred_i_165.
+Related violations: <none>
+
+LUTLP-1#48 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_172_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_5, BranchALU/ALUResult_inferred_i_47, BranchALU/ALUResult_inferred_i_172, BranchALU/ALUResult_inferred_i_173.
+Related violations: <none>
+
+LUTLP-1#49 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_181_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_6, BranchALU/ALUResult_inferred_i_51, BranchALU/ALUResult_inferred_i_52, BranchALU/ALUResult_inferred_i_181.
+Related violations: <none>
+
+LUTLP-1#50 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is BranchALU/ALUResult_inferred_i_182_n_6. Please evaluate your design. The cells in the loop are: BranchALU/ALUResult_inferred_i_7, BranchALU/ALUResult_inferred_i_53, BranchALU/ALUResult_inferred_i_182, BranchALU/ALUResult_inferred_i_183.
+Related violations: <none>
+
+LUTLP-1#51 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is Cont/Type_inferred_i_11_n_6. Please evaluate your design. The cells in the loop are: Cont/Type_inferred_i_2, Cont/Type_inferred_i_11, Cont/Type_inferred_i_13, Cont/Type_inferred_i_14.
+Related violations: <none>
+
+LUTLP-1#52 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult[12]. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_20, MainALU/ALUResult_inferred_i_93, MainALU/ALUResult_inferred_i_94, MainALU/ALUResult_inferred_i_254.
+Related violations: <none>
+
+LUTLP-1#53 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult[16]. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_16, MainALU/ALUResult_inferred_i_80, MainALU/ALUResult_inferred_i_229, MainALU/ALUResult_inferred_i_230.
+Related violations: <none>
+
+LUTLP-1#54 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult[17]. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_15, MainALU/ALUResult_inferred_i_79, MainALU/ALUResult_inferred_i_227, MainALU/ALUResult_inferred_i_228.
+Related violations: <none>
+
+LUTLP-1#55 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult[18]. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_14, MainALU/ALUResult_inferred_i_74, MainALU/ALUResult_inferred_i_217, MainALU/ALUResult_inferred_i_218.
+Related violations: <none>
+
+LUTLP-1#56 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult[31]. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_1, MainALU/ALUResult_inferred_i_33, MainALU/ALUResult_inferred_i_145, MainALU/ALUResult_inferred_i_146.
+Related violations: <none>
+
+LUTLP-1#57 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_112_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_26, MainALU/ALUResult_inferred_i_112, MainALU/ALUResult_inferred_i_113, MainALU/ALUResult_inferred_i_289.
+Related violations: <none>
+
+LUTLP-1#58 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_152_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_2, MainALU/ALUResult_inferred_i_36, MainALU/ALUResult_inferred_i_152, MainALU/ALUResult_inferred_i_153.
+Related violations: <none>
+
+LUTLP-1#59 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_158_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_3, MainALU/ALUResult_inferred_i_39, MainALU/ALUResult_inferred_i_158, MainALU/ALUResult_inferred_i_159.
+Related violations: <none>
+
+LUTLP-1#60 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_164_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_4, MainALU/ALUResult_inferred_i_42, MainALU/ALUResult_inferred_i_164, MainALU/ALUResult_inferred_i_165.
+Related violations: <none>
+
+LUTLP-1#61 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_172_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_5, MainALU/ALUResult_inferred_i_47, MainALU/ALUResult_inferred_i_172, MainALU/ALUResult_inferred_i_173.
+Related violations: <none>
+
+LUTLP-1#62 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_181_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_6, MainALU/ALUResult_inferred_i_51, MainALU/ALUResult_inferred_i_52, MainALU/ALUResult_inferred_i_181.
+Related violations: <none>
+
+LUTLP-1#63 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult_inferred_i_182_n_6. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_7, MainALU/ALUResult_inferred_i_53, MainALU/ALUResult_inferred_i_182, MainALU/ALUResult_inferred_i_183.
+Related violations: <none>
+
+LUTLP-1#64 Critical Warning
+Combinatorial Loop Alert  
+5 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is MainALU/ALUResult[19]. Please evaluate your design. The cells in the loop are: MainALU/ALUResult_inferred_i_13, MainALU/ALUResult_inferred_i_73, MainALU/ALUResult_inferred_i_215, MainALU/ALUResult_inferred_i_216, MainALU/ALUResult_inferred_i_432.
+Related violations: <none>
+
+LUTLP-1#65 Critical Warning
+Combinatorial Loop Alert  
+6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is Cont/Type_inferred_i_21_n_6. Please evaluate your design. The cells in the loop are: Cont/Type_inferred_i_4, Cont/Type_inferred_i_21, Cont/Type_inferred_i_22, Cont/Type_inferred_i_25, Cont/Type_inferred_i_50, Cont/Type_inferred_i_54.
+Related violations: <none>
+
+LUTLP-1#66 Critical Warning
+Combinatorial Loop Alert  
+7 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is Cont/Type_inferred_i_15_n_6. Please evaluate your design. The cells in the loop are: Cont/Type_inferred_i_3, Cont/Type_inferred_i_15, Cont/Type_inferred_i_16, Cont/Type_inferred_i_17, Cont/Type_inferred_i_18, Cont/Type_inferred_i_19, Cont/Type_inferred_i_44.
+Related violations: <none>
+
+LUTLP-1#67 Critical Warning
+Combinatorial Loop Alert  
+8 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is Cont/Type[3]. Please evaluate your design. The cells in the loop are: Cont/Type_inferred_i_1, Cont/Type_inferred_i_5, Cont/Type_inferred_i_8, Cont/Type_inferred_i_30, Cont/Type_inferred_i_33, Cont/Type_inferred_i_34, Cont/Type_inferred_i_55, Cont/Type_inferred_i_58.
+Related violations: <none>
+
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+129 out of 130 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: Hireg[31:0], Loreg[31:0], Reg_writedata[31:0], pcresult[31:0], Rst.
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+129 out of 130 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: Hireg[31:0], Loreg[31:0], Reg_writedata[31:0], pcresult[31:0], Rst.
+Related violations: <none>
+
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP BranchALU/ALUResult0 input BranchALU/ALUResult0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP BranchALU/ALUResult0 input BranchALU/ALUResult0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP BranchALU/ALUResult0__0 input BranchALU/ALUResult0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP BranchALU/ALUResult0__0 input BranchALU/ALUResult0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP BranchALU/ALUResult0__1 input BranchALU/ALUResult0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP BranchALU/ALUResult0__1 input BranchALU/ALUResult0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP MainALU/ALUResult0 input MainALU/ALUResult0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP MainALU/ALUResult0 input MainALU/ALUResult0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP MainALU/ALUResult0__0 input MainALU/ALUResult0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP MainALU/ALUResult0__0 input MainALU/ALUResult0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP MainALU/ALUResult0__1 input MainALU/ALUResult0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP MainALU/ALUResult0__1 input MainALU/ALUResult0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP MainALU/O40 input MainALU/O40/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP MainALU/O40 input MainALU/O40/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP MainALU/O40__0 input MainALU/O40__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP MainALU/O40__0 input MainALU/O40__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP MainALU/O40__1 input MainALU/O40__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP MainALU/O40__1 input MainALU/O40__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP MainALU/O40__2 input MainALU/O40__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP BranchALU/ALUResult0__0 output BranchALU/ALUResult0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP MainALU/ALUResult0 output MainALU/ALUResult0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP MainALU/ALUResult0__0 output MainALU/ALUResult0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP MainALU/ALUResult0__1 output MainALU/ALUResult0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP MainALU/O40 output MainALU/O40/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP MainALU/O40__0 output MainALU/O40__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP MainALU/O40__1 output MainALU/O40__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP MainALU/O40__2 output MainALU/O40__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP BranchALU/ALUResult0__0 multiplier stage BranchALU/ALUResult0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP MainALU/ALUResult0 multiplier stage MainALU/ALUResult0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP MainALU/ALUResult0__0 multiplier stage MainALU/ALUResult0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP MainALU/ALUResult0__1 multiplier stage MainALU/ALUResult0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP MainALU/O40 multiplier stage MainALU/O40/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP MainALU/O40__0 multiplier stage MainALU/O40__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP MainALU/O40__1 multiplier stage MainALU/O40__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP MainALU/O40__2 multiplier stage MainALU/O40__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDRC-63#1 Warning
+SLICEM_5lutO5_A5  
+Dangling output pin O5 on site SLICE_X54Y59:A5LUT. For this programming the O5 output pin should have a signal.
+Related violations: <none>
+
+PDRC-63#2 Warning
+SLICEM_5lutO5_A5  
+Dangling output pin O5 on site SLICE_X54Y82:A5LUT. For this programming the O5 output pin should have a signal.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net BranchFuckingComparator/IDCompare_reg_i_2_n_6 is a gated clock net sourced by a combinational pin BranchFuckingComparator/IDCompare_reg_i_2/O, cell BranchFuckingComparator/IDCompare_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net Cont/ALUOp_reg[4]_i_2_n_6 is a gated clock net sourced by a combinational pin Cont/ALUOp_reg[4]_i_2/O, cell Cont/ALUOp_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net Cont/ALUSrc_reg[0]_i_2_n_6 is a gated clock net sourced by a combinational pin Cont/ALUSrc_reg[0]_i_2/O, cell Cont/ALUSrc_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net Cont/ALUSrc_reg[1]_i_2_n_6 is a gated clock net sourced by a combinational pin Cont/ALUSrc_reg[1]_i_2/O, cell Cont/ALUSrc_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net Cont/AndI_reg_i_2_n_6 is a gated clock net sourced by a combinational pin Cont/AndI_reg_i_2/O, cell Cont/AndI_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net Cont/CompareOp_reg[1]_i_2_n_6 is a gated clock net sourced by a combinational pin Cont/CompareOp_reg[1]_i_2/O, cell Cont/CompareOp_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net Cont/MemData_reg[0]_i_1_n_6 is a gated clock net sourced by a combinational pin Cont/MemData_reg[0]_i_1/O, cell Cont/MemData_reg[0]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net Cont/MemData_reg[1]_i_2_n_6 is a gated clock net sourced by a combinational pin Cont/MemData_reg[1]_i_2/O, cell Cont/MemData_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net Cont/MemRead_reg_i_2_n_6 is a gated clock net sourced by a combinational pin Cont/MemRead_reg_i_2/O, cell Cont/MemRead_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net Cont/MemWrite_reg_i_2_n_6 is a gated clock net sourced by a combinational pin Cont/MemWrite_reg_i_2/O, cell Cont/MemWrite_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net Cont/MyCtl1_reg_i_2_n_6 is a gated clock net sourced by a combinational pin Cont/MyCtl1_reg_i_2/O, cell Cont/MyCtl1_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net Cont/Op_reg[0]_i_2_n_6 is a gated clock net sourced by a combinational pin Cont/Op_reg[0]_i_2/O, cell Cont/Op_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net Cont/Op_reg[1]_i_2_n_6 is a gated clock net sourced by a combinational pin Cont/Op_reg[1]_i_2/O, cell Cont/Op_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net Cont/PCSrc_reg_i_2_n_6 is a gated clock net sourced by a combinational pin Cont/PCSrc_reg_i_2/O, cell Cont/PCSrc_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net Cont/ReadDMMux_reg[0]_i_2_n_6 is a gated clock net sourced by a combinational pin Cont/ReadDMMux_reg[0]_i_2/O, cell Cont/ReadDMMux_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net Cont/ReadDMMux_reg[1]_i_2_n_6 is a gated clock net sourced by a combinational pin Cont/ReadDMMux_reg[1]_i_2/O, cell Cont/ReadDMMux_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net Cont/ReadH_reg_i_2_n_6 is a gated clock net sourced by a combinational pin Cont/ReadH_reg_i_2/O, cell Cont/ReadH_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net Cont/RegDst_reg_i_2_n_6 is a gated clock net sourced by a combinational pin Cont/RegDst_reg_i_2/O, cell Cont/RegDst_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+4 net(s) have no routable loads. The problem bus(es) and/or net(s) are MEWBRegister1/WBType[3:0].
+Related violations: <none>
+
+

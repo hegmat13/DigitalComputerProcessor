@@ -1,0 +1,33 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Files for Labs 1-18/ALU32Bit.v" \
+"../../../../Files for Labs 1-18/BranchComparator.v" \
+"../../../../../Digital Logic Files/ClkDiv.v" \
+"../../../../Files for Labs 1-18/Controller.v" \
+"../../../../Files for Labs 1-18/DataMemory.v" \
+"../../../../Files for Labs 1-18/Datapath.v" \
+"../../../../Files for Labs 1-18/EXMERegister.v" \
+"../../../../FinalProject.srcs/sources_1/new/Forward.v" \
+"../../../../FinalProject.srcs/sources_1/new/HazardDetection.v" \
+"../../../../Files for Labs 1-18/HiLoRegister.v" \
+"../../../../Files for Labs 1-18/IDEXRegister.v" \
+"../../../../Files for Labs 1-18/IFIDRegister.v" \
+"../../../../Files for Labs 1-18/InstructionMemory.v" \
+"../../../../Files for Labs 1-18/MEWBRegister.v" \
+"../../../../Files for Labs 1-18/Mux32Bit2To1.v" \
+"../../../../Files for Labs 1-18/Mux32Bit4To1.v" \
+"../../../../Files for Labs 1-18/Mux64Bit4To1.v" \
+"../../../../Files for Labs 1-18/PCAdder.v" \
+"../../../../Files for Labs 1-18/ProgramCounter.v" \
+"../../../../Files for Labs 1-18/RegisterFile.v" \
+"../../../../../Digital Logic Files/SevenSegment.v" \
+"../../../../Files for Labs 1-18/SignExtension.v" \
+"../../../../Files for Labs 1-18/SignExtension8bit.v" \
+"../../../../../Digital Logic Files/TwoDigitDisplay.v" \
+"../../../../Files for Labs 1-18/Datapath_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

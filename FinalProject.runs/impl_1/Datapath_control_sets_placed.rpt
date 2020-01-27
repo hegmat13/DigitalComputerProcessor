@@ -1,0 +1,137 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Jan 27 12:31:09 2020
+| Host         : DESKTOP-TVROL71 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Datapath_control_sets_placed.rpt
+| Design       : Datapath
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    70 |
+| Unused register locations in slices containing registers |   152 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           20 |
+|      4 |            4 |
+|      6 |            2 |
+|    16+ |           44 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1550 |          306 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             354 |           74 |
+| Yes          | No                    | No                     |            2112 |          456 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             192 |           52 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------+-----------------------------------+-----------------------------------------------+------------------+----------------+
+|                  Clock Signal                  |           Enable Signal           |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
++------------------------------------------------+-----------------------------------+-----------------------------------------------+------------------+----------------+
+|  Cont/MemData_reg[1]_i_2_n_6                   |                                   | Cont/MemData_reg[1]_i_3_n_6                   |                1 |              2 |
+|  Cont/Op_reg[0]_i_2_n_6                        |                                   | Cont/Op_reg[0]_i_3_n_6                        |                1 |              2 |
+|  Cont/MemWrite_reg_i_2_n_6                     |                                   | Cont/MemWrite_reg_i_3_n_6                     |                1 |              2 |
+|  BranchFuckingComparator/IDCompare_reg_i_2_n_6 |                                   | BranchFuckingComparator/IDCompare_reg_i_3_n_6 |                1 |              2 |
+|  Cont/ALUSrc_reg[0]_i_2_n_6                    |                                   | Cont/ALUSrc_reg[0]_i_3_n_6                    |                1 |              2 |
+|  Cont/ALUOp_reg[4]_i_2_n_6                     |                                   | Cont/ALUOp_reg[4]_i_3_n_6                     |                1 |              2 |
+|  Cont/MemData_reg[0]_i_1_n_6                   |                                   | Cont/MemData_reg[0]_i_2_n_6                   |                1 |              2 |
+|  Cont/CompareOp_reg[1]_i_2_n_6                 |                                   | Cont/CompareOp_reg[1]_i_3_n_6                 |                1 |              2 |
+|  Cont/AndI_reg_i_2_n_6                         |                                   | Cont/AndI_reg_i_3_n_6                         |                1 |              2 |
+|  Cont/MyCtl1_reg_i_2_n_6                       |                                   | Cont/ALUOp_reg[1]_i_2_n_6                     |                1 |              2 |
+|  Cont/MyCtl1_reg_i_2_n_6                       |                                   | Cont/ALUOp_reg[2]_i_2_n_6                     |                1 |              2 |
+|  Cont/MyCtl1_reg_i_2_n_6                       |                                   | Cont/ALUOp_reg[0]_i_2_n_6                     |                1 |              2 |
+|  Cont/MemRead_reg_i_2_n_6                      |                                   | Cont/MemRead_reg_i_3_n_6                      |                1 |              2 |
+|  Cont/ReadDMMux_reg[0]_i_2_n_6                 |                                   | Cont/ReadDMMux_reg[0]_i_3_n_6                 |                1 |              2 |
+|  Cont/ReadDMMux_reg[1]_i_2_n_6                 |                                   | Cont/ReadDMMux_reg[1]_i_3_n_6                 |                1 |              2 |
+|  Cont/Op_reg[1]_i_2_n_6                        |                                   | Cont/ALUSrc_reg[1]_i_3_n_6                    |                1 |              2 |
+|  Cont/ReadH_reg_i_2_n_6                        |                                   | Cont/HiLoInput_reg[0]_i_2_n_6                 |                1 |              2 |
+|  Cont/ReadH_reg_i_2_n_6                        |                                   | Cont/HiLoInput_reg[1]_i_2_n_6                 |                1 |              2 |
+|  Cont/ReadH_reg_i_2_n_6                        |                                   | Cont/OutputToWriteData_reg[1]_i_2_n_6         |                1 |              2 |
+|  Cont/ReadH_reg_i_2_n_6                        |                                   | Cont/ReadH_reg_i_3_n_6                        |                1 |              2 |
+|  Cont/ReadH_reg_i_2_n_6                        |                                   | Cont/RegWriteH_reg_i_2_n_6                    |                1 |              4 |
+|  Cont/MyCtl1_reg_i_2_n_6                       |                                   |                                               |                1 |              4 |
+|  Cont/RegDst_reg_i_2_n_6                       |                                   | Cont/RegDst_reg_i_3_n_6                       |                1 |              4 |
+|  Cont/PCSrc_reg_i_2_n_6                        |                                   | Cont/PCSrc_reg_i_3_n_6                        |                1 |              4 |
+|  Cont/MyCtl1_reg_i_2_n_6                       |                                   | Cont/MyCtl1_reg_i_3_n_6                       |                2 |              6 |
+|  Cont/ALUSrc_reg[1]_i_2_n_6                    |                                   | Cont/ALUSrc_reg[1]_i_3_n_6                    |                1 |              6 |
+|  MainALU/n_1_340_BUFG                          |                                   |                                               |               10 |             64 |
+|  MainALU/n_4_345_BUFG                          |                                   |                                               |               19 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[5][31]_i_1_n_6  |                                               |               13 |             64 |
+|                                                |                                   |                                               |               12 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[6][31]_i_1_n_6  |                                               |               20 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[4][31]_i_1_n_6  |                                               |                9 |             64 |
+|  Clk_IBUF_BUFG                                 | DM/memory_reg_0_15_0_0_i_1_n_6    |                                               |                8 |             64 |
+| ~Clk_IBUF_BUFG                                 | H1/PCWrite                        | Rst_IBUF                                      |               18 |             64 |
+|  Clk_IBUF_BUFG                                 | DM/memory_reg_0_31_0_0_i_1_n_6    |                                               |                8 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[12][31]_i_1_n_6 |                                               |               16 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[13][31]_i_1_n_6 |                                               |                9 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[20][31]_i_1_n_6 |                                               |               15 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[15][31]_i_1_n_6 |                                               |               16 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[14][31]_i_1_n_6 |                                               |               14 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[27][31]_i_1_n_6 |                                               |                7 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[17][31]_i_1_n_6 |                                               |                9 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[10][31]_i_1_n_6 |                                               |               16 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[18][31]_i_1_n_6 |                                               |               13 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[21][31]_i_1_n_6 |                                               |               15 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[24][31]_i_1_n_6 |                                               |                8 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[28][31]_i_1_n_6 |                                               |                9 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[16][31]_i_1_n_6 |                                               |                9 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[11][31]_i_1_n_6 |                                               |               13 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[22][31]_i_1_n_6 |                                               |               22 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[25][31]_i_1_n_6 |                                               |                9 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[29][31]_i_1_n_6 |                                               |               18 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[23][31]_i_1_n_6 |                                               |               24 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[19][31]_i_1_n_6 |                                               |               13 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[26][31]_i_1_n_6 |                                               |                8 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[1][31]_i_1_n_6  |                                               |               13 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[30][31]_i_1_n_6 |                                               |               18 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[2][31]_i_1_n_6  |                                               |               13 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[0][31]_i_1_n_6  |                                               |                9 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[3][31]_i_1_n_6  |                                               |               10 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[7][31]_i_1_n_6  |                                               |               21 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[9][31]_i_1_n_6  |                                               |               17 |             64 |
+|  Clk_IBUF_BUFG                                 | Registers/regFile[8][31]_i_1_n_6  |                                               |               18 |             64 |
+|  MainALU/n_3_241_BUFG                          |                                   |                                               |               16 |            128 |
+| ~Clk_IBUF_BUFG                                 | H1/IFIDWrite                      |                                               |               32 |            128 |
+|  Clk_IBUF_BUFG                                 | H1/IFIDWrite                      | IFIDReg/regFile[0][31]_i_1_n_6                |               34 |            128 |
+|  Clk_IBUF_BUFG                                 | DM/memory_reg_0_255_0_0_i_1_n_6   |                                               |               32 |            256 |
+|  Clk_IBUF_BUFG                                 |                                   | IDEXRegister1/TwoBitSignals[0][1]_i_1_n_6     |               48 |            290 |
+|  Clk_IBUF_BUFG                                 |                                   |                                               |              118 |            500 |
+| ~Clk_IBUF_BUFG                                 |                                   |                                               |              130 |            726 |
++------------------------------------------------+-----------------------------------+-----------------------------------------------+------------------+----------------+
+
+

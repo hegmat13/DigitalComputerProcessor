@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jan 27 12:39:32 2020
+# Process ID: 16080
+# Current directory: C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.sim/sim_1/synth/func/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.sim/sim_1/synth/func/xsim/xsim.dir/Datapath_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.sim/sim_1/synth/func/xsim/webtalk.log
+# Journal file: C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.sim/sim_1/synth/func/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.sim/sim_1/synth/func/xsim/xsim.dir/Datapath_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.sim/sim_1/synth/func/xsim/xsim.dir/Datapath_tb_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Jan 27 12:39:35 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 27 12:39:35 2020...

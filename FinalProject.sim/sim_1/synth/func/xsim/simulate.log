@@ -1,0 +1,7 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 960100 ps  Iteration: 0  Process: /Datapath_tb/DP_tb/MainALU/Zero_INST_0_i_2/Always116_365
+  File: C:\Xilinx\Vivado\2018.2\data/verilog/src/unisims/LUT5.v
+
+HDL Line: C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.sim/sim_1/synth/func/xsim/Datapath_tb_func_synth.v:42232

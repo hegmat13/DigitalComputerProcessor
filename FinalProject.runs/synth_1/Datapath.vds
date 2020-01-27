@@ -1,0 +1,1190 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jan 27 12:27:55 2020
+# Process ID: 11676
+# Current directory: C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.runs/synth_1
+# Command line: vivado.exe -log Datapath.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Datapath.tcl
+# Log file: C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.runs/synth_1/Datapath.vds
+# Journal file: C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Datapath.tcl -notrace
+Command: synth_design -top Datapath -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9640 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 410.090 ; gain = 97.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Datapath' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:28]
+INFO: [Synth 8-6157] synthesizing module 'ClkDiv' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/ClkDiv.v:1]
+	Parameter DivVal bound to: 500000 - type: integer 
+INFO: [Synth 8-4471] merging register 'ClkInt_reg' into 'ClkOut_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/ClkDiv.v:15]
+WARNING: [Synth 8-6014] Unused sequential element ClkInt_reg was removed.  [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/ClkDiv.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'ClkDiv' (1#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/ClkDiv.v:1]
+INFO: [Synth 8-6157] synthesizing module 'TwoDigitDisplay' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/TwoDigitDisplay.v:10]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/SevenSegment.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (2#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/SevenSegment.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/TwoDigitDisplay.v:71]
+WARNING: [Synth 8-567] referenced signal 'firstdigit' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/TwoDigitDisplay.v:70]
+WARNING: [Synth 8-567] referenced signal 'seconddigit' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/TwoDigitDisplay.v:70]
+WARNING: [Synth 8-567] referenced signal 'thirddigit' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/TwoDigitDisplay.v:70]
+WARNING: [Synth 8-567] referenced signal 'fourthdigit' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/TwoDigitDisplay.v:70]
+WARNING: [Synth 8-567] referenced signal 'fifthdigit' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/TwoDigitDisplay.v:70]
+WARNING: [Synth 8-567] referenced signal 'sixthdigit' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/TwoDigitDisplay.v:70]
+WARNING: [Synth 8-567] referenced signal 'seventhdigit' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/TwoDigitDisplay.v:70]
+WARNING: [Synth 8-567] referenced signal 'eighthdigit' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/TwoDigitDisplay.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'TwoDigitDisplay' (3#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Digital Logic Files/TwoDigitDisplay.v:10]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/ProgramCounter.v:31]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/ProgramCounter.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (4#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/ProgramCounter.v:31]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/InstructionMemory.v:39]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/InstructionMemory.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (5#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/InstructionMemory.v:39]
+INFO: [Synth 8-6157] synthesizing module 'IFIDRegister' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/IFIDRegister.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/IFIDRegister.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'IFIDRegister' (6#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/IFIDRegister.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU32Bit' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/ALU32Bit.v:71]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/ALU32Bit.v:79]
+WARNING: [Synth 8-324] index -1 out of range [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/ALU32Bit.v:122]
+WARNING: [Synth 8-324] index -1 out of range [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/ALU32Bit.v:131]
+WARNING: [Synth 8-567] referenced signal 'Temp2' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/ALU32Bit.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'ALU32Bit' (7#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/ALU32Bit.v:71]
+INFO: [Synth 8-6157] synthesizing module 'Mux32Bit2To1' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Mux32Bit2To1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'Mux32Bit2To1' (8#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Mux32Bit2To1.v:12]
+WARNING: [Synth 8-689] width (5) of port connection 'out' does not match port width (32) of module 'Mux32Bit2To1' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:103]
+WARNING: [Synth 8-689] width (5) of port connection 'inA' does not match port width (32) of module 'Mux32Bit2To1' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:103]
+WARNING: [Synth 8-689] width (5) of port connection 'inB' does not match port width (32) of module 'Mux32Bit2To1' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:103]
+WARNING: [Synth 8-689] width (5) of port connection 'out' does not match port width (32) of module 'Mux32Bit2To1' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:105]
+WARNING: [Synth 8-689] width (5) of port connection 'inA' does not match port width (32) of module 'Mux32Bit2To1' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:105]
+WARNING: [Synth 8-689] width (5) of port connection 'inB' does not match port width (32) of module 'Mux32Bit2To1' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:105]
+WARNING: [Synth 8-689] width (5) of port connection 'out' does not match port width (32) of module 'Mux32Bit2To1' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:107]
+WARNING: [Synth 8-689] width (5) of port connection 'inA' does not match port width (32) of module 'Mux32Bit2To1' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:107]
+WARNING: [Synth 8-689] width (5) of port connection 'inB' does not match port width (32) of module 'Mux32Bit2To1' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:107]
+INFO: [Synth 8-6157] synthesizing module 'SignExtension' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/SignExtension.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'SignExtension' (9#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/SignExtension.v:12]
+INFO: [Synth 8-6157] synthesizing module 'SignExtension8bit' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/SignExtension8bit.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'SignExtension8bit' (10#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/SignExtension8bit.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Mux32Bit4To1' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Mux32Bit4To1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'Mux32Bit4To1' (11#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Mux32Bit4To1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Mux64Bit4To1' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Mux64Bit4To1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'Mux64Bit4To1' (12#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Mux64Bit4To1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'HiLoRegister' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/HiLoRegister.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/HiLoRegister.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'HiLoRegister' (13#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/HiLoRegister.v:23]
+INFO: [Synth 8-6157] synthesizing module 'EXMERegister' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/EXMERegister.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/EXMERegister.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'EXMERegister' (14#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/EXMERegister.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'MEWriteReg' does not match port width (5) of module 'EXMERegister' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:140]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/DataMemory.v:35]
+WARNING: [Synth 8-3848] Net mem0 in module/entity DataMemory does not have driver. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/DataMemory.v:46]
+WARNING: [Synth 8-3848] Net mem1 in module/entity DataMemory does not have driver. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/DataMemory.v:46]
+WARNING: [Synth 8-3848] Net mem2 in module/entity DataMemory does not have driver. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/DataMemory.v:46]
+WARNING: [Synth 8-3848] Net mem3 in module/entity DataMemory does not have driver. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/DataMemory.v:46]
+WARNING: [Synth 8-3848] Net mem4 in module/entity DataMemory does not have driver. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/DataMemory.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (15#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/DataMemory.v:35]
+INFO: [Synth 8-6157] synthesizing module 'MEWBRegister' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/MEWBRegister.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/MEWBRegister.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'MEWBRegister' (16#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/MEWBRegister.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'MEWriteReg' does not match port width (5) of module 'MEWBRegister' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:151]
+INFO: [Synth 8-6157] synthesizing module 'PCAdder' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/PCAdder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'PCAdder' (17#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/PCAdder.v:22]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/RegisterFile.v:45]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/RegisterFile.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (18#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/RegisterFile.v:45]
+INFO: [Synth 8-6157] synthesizing module 'BranchComparator' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/BranchComparator.v:23]
+WARNING: [Synth 8-567] referenced signal 'CompareOp' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/BranchComparator.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'BranchComparator' (19#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/BranchComparator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IDEXRegister' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/IDEXRegister.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/IDEXRegister.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'IDEXRegister' (20#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/IDEXRegister.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:30]
+WARNING: [Synth 8-567] referenced signal 'Bits25to21' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:33]
+WARNING: [Synth 8-567] referenced signal 'Bits10to6' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:33]
+WARNING: [Synth 8-567] referenced signal 'Bits20to16' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (21#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Forward' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/Forward.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/Forward.v:27]
+WARNING: [Synth 8-567] referenced signal 'EXType' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/Forward.v:29]
+WARNING: [Synth 8-567] referenced signal 'WBRegWrite' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/Forward.v:29]
+WARNING: [Synth 8-567] referenced signal 'MERegWrite' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/Forward.v:29]
+WARNING: [Synth 8-567] referenced signal 'EXMemRead' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/Forward.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'Forward' (22#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/Forward.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'MEWriteReg' does not match port width (5) of module 'Forward' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:177]
+INFO: [Synth 8-6157] synthesizing module 'HazardDetection' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:27]
+WARNING: [Synth 8-567] referenced signal 'WBWriteReg' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:30]
+WARNING: [Synth 8-567] referenced signal 'WBRegWrite' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:30]
+WARNING: [Synth 8-567] referenced signal 'MEWriteReg' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:30]
+WARNING: [Synth 8-567] referenced signal 'MERegWrite' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:30]
+WARNING: [Synth 8-567] referenced signal 'MEMemRead' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:30]
+WARNING: [Synth 8-567] referenced signal 'IDPCSrc' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:30]
+WARNING: [Synth 8-567] referenced signal 'IDCompare' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:30]
+WARNING: [Synth 8-567] referenced signal 'R1' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:63]
+WARNING: [Synth 8-567] referenced signal 'R2' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:63]
+WARNING: [Synth 8-567] referenced signal 'EXRegWrite' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:63]
+WARNING: [Synth 8-567] referenced signal 'IDType' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:63]
+WARNING: [Synth 8-567] referenced signal 'MERegWrite' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:63]
+WARNING: [Synth 8-567] referenced signal 'MEWriteReg' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:63]
+WARNING: [Synth 8-567] referenced signal 'MEMemRead' should be on the sensitivity list [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'HazardDetection' (23#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.srcs/sources_1/new/HazardDetection.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'MEWriteReg' does not match port width (5) of module 'HazardDetection' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:179]
+WARNING: [Synth 8-3848] Net WriteData1 in module/entity Datapath does not have driver. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:84]
+WARNING: [Synth 8-3848] Net EXZero in module/entity Datapath does not have driver. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath' (24#1) [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:28]
+WARNING: [Synth 8-3331] design HazardDetection has unconnected port Clk
+WARNING: [Synth 8-3331] design Forward has unconnected port METype[3]
+WARNING: [Synth 8-3331] design Forward has unconnected port METype[2]
+WARNING: [Synth 8-3331] design Forward has unconnected port METype[1]
+WARNING: [Synth 8-3331] design Forward has unconnected port METype[0]
+WARNING: [Synth 8-3331] design Forward has unconnected port EXRegDst
+WARNING: [Synth 8-3331] design Forward has unconnected port WBMemWrite
+WARNING: [Synth 8-3331] design Controller has unconnected port Clk
+WARNING: [Synth 8-3331] design Controller has unconnected port Rst
+WARNING: [Synth 8-3331] design BranchComparator has unconnected port Clk
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[31]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[30]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[29]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[28]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[27]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[26]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[25]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[24]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[23]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[22]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[21]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[20]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[19]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[18]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[17]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[16]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[15]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[14]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[13]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[12]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[11]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[10]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[9]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[8]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[7]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[6]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[5]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[4]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[3]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[2]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[1]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem0[0]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[31]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[30]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[29]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[28]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[27]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[26]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[25]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[24]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[23]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[22]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[21]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[20]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[19]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[18]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[17]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[16]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[15]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[14]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[13]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[12]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[11]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[10]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[9]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[8]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[7]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[6]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[5]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[4]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[3]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[2]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[1]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem1[0]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[31]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[30]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[29]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[28]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[27]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[26]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[25]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[24]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[23]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[22]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[21]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[20]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[19]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[18]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[17]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[16]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[15]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[14]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[13]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[12]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[11]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[10]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[9]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[8]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[7]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port mem2[6]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 502.785 ; gain = 190.324
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin EXMERegister1:EXZero to constant 0 [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Datapath.v:140]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 502.785 ; gain = 190.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 502.785 ; gain = 190.324
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc]
+WARNING: [Vivado 12-584] No ports matched 'en_out[0]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_out[0]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_out[1]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_out[1]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_out[2]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_out[2]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_out[3]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_out[3]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_out[4]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_out[4]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_out[5]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_out[5]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_out[6]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_out[6]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_out[7]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_out[7]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Reset'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Reset'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out7[6]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out7[6]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out7[5]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out7[5]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out7[4]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out7[4]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out7[3]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out7[3]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out7[2]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out7[2]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out7[1]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out7[1]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out7[0]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out7[0]'. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/Labs 1-3/Two4DigitDisplay.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Datapath_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Datapath_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 861.148 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 861.148 ; gain = 548.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 861.148 ; gain = 548.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 861.148 ; gain = 548.688
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "ClkOut" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "memory" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/ALU32Bit.v:166]
+INFO: [Synth 8-5545] ROM "Zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "IDCompare" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ReadH" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ReadH" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ReadL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CompareOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CompareOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CompareOp" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'ALUResult64_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/ALU32Bit.v:169]
+WARNING: [Synth 8-327] inferring latch for variable 'Temp1_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/ALU32Bit.v:154]
+WARNING: [Synth 8-327] inferring latch for variable 'Temp2_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/ALU32Bit.v:168]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Mux32Bit2To1.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Mux32Bit4To1.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Mux64Bit4To1.v:22]
+WARNING: [Synth 8-327] inferring latch for variable 'IDCompare_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/BranchComparator.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:38]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrc_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'MemRead_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:42]
+WARNING: [Synth 8-327] inferring latch for variable 'MemWrite_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:43]
+WARNING: [Synth 8-327] inferring latch for variable 'PCSrc_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'MyCtl1_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'RTtoRS_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'ReadH_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'ReadL_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWriteH_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWriteL_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'HiLoInput_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'OutputToWriteData_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'Op_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:54]
+WARNING: [Synth 8-327] inferring latch for variable 'AndI_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'CompareOp_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'MemData_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'ReadDMMux_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'Jump_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'link_reg' [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/Controller.v:60]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 861.148 ; gain = 548.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   3 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     26 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 57    
+	               26 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 6     
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 41    
++---Multipliers : 
+	                33x33  Multipliers := 2     
+	                32x32  Multipliers := 2     
++---Muxes : 
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 4     
+	 195 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 66    
+	   4 Input     32 Bit        Muxes := 11    
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 116   
+	   5 Input      6 Bit        Muxes := 2     
+	  24 Input      6 Bit        Muxes := 2     
+	  10 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   9 Input      6 Bit        Muxes := 1     
+	  11 Input      6 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 11    
+	  25 Input      4 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	  23 Input      3 Bit        Muxes := 2     
+	  21 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	  14 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	  24 Input      3 Bit        Muxes := 1     
+	  12 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 46    
+	  15 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	  11 Input      2 Bit        Muxes := 1     
+	  23 Input      2 Bit        Muxes := 5     
+	  22 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 6     
+	   8 Input      2 Bit        Muxes := 1     
+	  21 Input      2 Bit        Muxes := 1     
+	  18 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 8     
+	   6 Input      2 Bit        Muxes := 5     
+	  10 Input      2 Bit        Muxes := 1     
+	  25 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 98    
+	  22 Input      1 Bit        Muxes := 3     
+	  39 Input      1 Bit        Muxes := 2     
+	  21 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 19    
+	   5 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 4     
+	   9 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+	  19 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ClkDiv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module TwoDigitDisplay 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module ProgramCounter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module InstructionMemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	 195 Input     32 Bit        Muxes := 1     
+Module IFIDRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module ALU32Bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Multipliers : 
+	                33x33  Multipliers := 1     
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 3     
+	   8 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 50    
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  22 Input      1 Bit        Muxes := 1     
+	  39 Input      1 Bit        Muxes := 1     
+	  21 Input      1 Bit        Muxes := 1     
+Module Mux32Bit2To1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module SignExtension 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module SignExtension8bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Mux32Bit4To1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module Mux64Bit4To1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     64 Bit        Muxes := 1     
+Module HiLoRegister 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   3 Input     64 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+Module EXMERegister 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
+Module DataMemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MEWBRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
+Module PCAdder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module RegisterFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 38    
+Module BranchComparator 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module IDEXRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 8     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 12    
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+Module Controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 15    
+	   8 Input      6 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 2     
+	  24 Input      6 Bit        Muxes := 2     
+	  10 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   9 Input      6 Bit        Muxes := 1     
+	  11 Input      6 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	  25 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 10    
+	   9 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	  23 Input      3 Bit        Muxes := 2     
+	  21 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	  14 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	  24 Input      3 Bit        Muxes := 1     
+	  12 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	  15 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	  23 Input      2 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 23    
+	  22 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 4     
+	   8 Input      2 Bit        Muxes := 1     
+	  21 Input      2 Bit        Muxes := 1     
+	  18 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 8     
+	   6 Input      2 Bit        Muxes := 5     
+	  10 Input      2 Bit        Muxes := 1     
+	  25 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 88    
+	   3 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 19    
+	   5 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 4     
+	   9 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 3     
+	  22 Input      1 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module Forward 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 13    
+	   3 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+Module HazardDetection 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "Zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/ALU32Bit.v:91]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/Files for Labs 1-18/ALU32Bit.v:169]
+DSP Report: Generating DSP ALUResult0, operation Mode is: A*B.
+DSP Report: operator ALUResult0 is absorbed into DSP ALUResult0.
+DSP Report: operator ALUResult0 is absorbed into DSP ALUResult0.
+DSP Report: Generating DSP ALUResult0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator ALUResult0 is absorbed into DSP ALUResult0.
+DSP Report: operator ALUResult0 is absorbed into DSP ALUResult0.
+DSP Report: Generating DSP ALUResult0, operation Mode is: A*B.
+DSP Report: operator ALUResult0 is absorbed into DSP ALUResult0.
+DSP Report: operator ALUResult0 is absorbed into DSP ALUResult0.
+DSP Report: Generating DSP ALUResult0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator ALUResult0 is absorbed into DSP ALUResult0.
+DSP Report: operator ALUResult0 is absorbed into DSP ALUResult0.
+DSP Report: Generating DSP O40, operation Mode is: A*B.
+DSP Report: operator O40 is absorbed into DSP O40.
+DSP Report: operator O40 is absorbed into DSP O40.
+DSP Report: Generating DSP O40, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator O40 is absorbed into DSP O40.
+DSP Report: operator O40 is absorbed into DSP O40.
+DSP Report: Generating DSP O40, operation Mode is: A*B.
+DSP Report: operator O40 is absorbed into DSP O40.
+DSP Report: operator O40 is absorbed into DSP O40.
+DSP Report: Generating DSP O40, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator O40 is absorbed into DSP O40.
+DSP Report: operator O40 is absorbed into DSP O40.
+INFO: [Synth 8-5545] ROM "Zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP ALUResult0, operation Mode is: A*B.
+DSP Report: operator ALUResult0 is absorbed into DSP ALUResult0.
+DSP Report: operator ALUResult0 is absorbed into DSP ALUResult0.
+DSP Report: Generating DSP ALUResult0, operation Mode is: A*B.
+DSP Report: operator ALUResult0 is absorbed into DSP ALUResult0.
+DSP Report: operator ALUResult0 is absorbed into DSP ALUResult0.
+DSP Report: Generating DSP ALUResult0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator ALUResult0 is absorbed into DSP ALUResult0.
+DSP Report: operator ALUResult0 is absorbed into DSP ALUResult0.
+DSP Report: Generating DSP O40, operation Mode is: A*B.
+DSP Report: operator O40 is absorbed into DSP O40.
+DSP Report: operator O40 is absorbed into DSP O40.
+DSP Report: Generating DSP O40, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator O40 is absorbed into DSP O40.
+DSP Report: operator O40 is absorbed into DSP O40.
+DSP Report: Generating DSP O40, operation Mode is: A*B.
+DSP Report: operator O40 is absorbed into DSP O40.
+DSP Report: operator O40 is absorbed into DSP O40.
+DSP Report: Generating DSP O40, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator O40 is absorbed into DSP O40.
+DSP Report: operator O40 is absorbed into DSP O40.
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5545] ROM "ClkDiv1/ClkOut" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'AndiMux/out_reg[16]' (LD) to 'AndiMux/out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'AndiMux/out_reg[17]' (LD) to 'AndiMux/out_reg[18]'
+INFO: [Synth 8-3886] merging instance 'AndiMux/out_reg[18]' (LD) to 'AndiMux/out_reg[19]'
+INFO: [Synth 8-3886] merging instance 'AndiMux/out_reg[19]' (LD) to 'AndiMux/out_reg[20]'
+INFO: [Synth 8-3886] merging instance 'AndiMux/out_reg[20]' (LD) to 'AndiMux/out_reg[21]'
+INFO: [Synth 8-3886] merging instance 'AndiMux/out_reg[21]' (LD) to 'AndiMux/out_reg[22]'
+INFO: [Synth 8-3886] merging instance 'AndiMux/out_reg[22]' (LD) to 'AndiMux/out_reg[23]'
+INFO: [Synth 8-3886] merging instance 'AndiMux/out_reg[23]' (LD) to 'AndiMux/out_reg[24]'
+INFO: [Synth 8-3886] merging instance 'AndiMux/out_reg[24]' (LD) to 'AndiMux/out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'AndiMux/out_reg[25]' (LD) to 'AndiMux/out_reg[26]'
+INFO: [Synth 8-3886] merging instance 'AndiMux/out_reg[26]' (LD) to 'AndiMux/out_reg[27]'
+INFO: [Synth 8-3886] merging instance 'AndiMux/out_reg[27]' (LD) to 'AndiMux/out_reg[28]'
+INFO: [Synth 8-3886] merging instance 'AndiMux/out_reg[28]' (LD) to 'AndiMux/out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'AndiMux/out_reg[29]' (LD) to 'AndiMux/out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'AndiMux/out_reg[30]' (LD) to 'AndiMux/out_reg[31]'
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[31]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[30]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[29]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[28]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[27]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[26]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[25]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[24]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[23]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[22]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[21]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[20]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[19]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[18]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[17]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[16]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[15]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[14]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[13]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[12]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[11]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[10]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[9]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[8]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[7]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[6]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[5]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[4]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[3]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[2]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[1]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rsORrt/out_reg[0]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[31]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[30]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[29]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[28]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[27]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[26]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[25]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[24]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[23]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[22]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[21]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[20]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[19]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[18]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[17]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[16]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[15]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[14]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[13]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[12]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[11]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[10]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[9]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[8]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[7]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[6]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[5]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[4]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[3]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[2]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[1]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrs/out_reg[0]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[31]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[30]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[29]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[28]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[27]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[26]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[25]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[24]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[23]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[22]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[21]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[20]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[19]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[18]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[17]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[16]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[15]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[14]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[13]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[12]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[11]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[10]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[9]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[8]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[7]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[6]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[5]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[4]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[3]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[2]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[1]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (rtORrd/out_reg[0]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (AndiMux/out_reg[31]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (AndiMux/out_reg[15]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (AndiMux/out_reg[14]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (AndiMux/out_reg[13]) is unused and will be removed from module Datapath.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Cont/\ALUOp_reg[5] )
+INFO: [Synth 8-3886] merging instance 'Cont/OutputToWriteData_reg[0]' (LDC) to 'Cont/ReadH_reg'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 861.148 ; gain = 548.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------+-----------+----------------------+------------------------------------------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives                                     | 
++------------+---------------+-----------+----------------------+------------------------------------------------+
+|Datapath    | DM/memory_reg | Implied   | 512 x 32             | RAM16X1S x 32  RAM32X1S x 32  RAM256X1S x 32   | 
++------------+---------------+-----------+----------------------+------------------------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU32Bit    | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 888.043 ; gain = 575.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 891.230 ; gain = 578.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+---------------+-----------+----------------------+------------------------------------------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives                                     | 
++------------+---------------+-----------+----------------------+------------------------------------------------+
+|Datapath    | DM/memory_reg | Implied   | 512 x 32             | RAM16X1S x 32  RAM32X1S x 32  RAM256X1S x 32   | 
++------------+---------------+-----------+----------------------+------------------------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 915.031 ; gain = 602.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin EXMERegister1:EXZero to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:04 . Memory (MB): peak = 915.031 ; gain = 602.570
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:04 . Memory (MB): peak = 915.031 ; gain = 602.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 915.031 ; gain = 602.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 915.031 ; gain = 602.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 915.031 ; gain = 602.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 915.031 ; gain = 602.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     7|
+|2     |CARRY4    |   154|
+|3     |DSP48E1   |    14|
+|4     |LUT1      |    69|
+|5     |LUT2      |   696|
+|6     |LUT3      |   320|
+|7     |LUT4      |   419|
+|8     |LUT5      |   372|
+|9     |LUT6      |  2190|
+|10    |MUXF7     |   308|
+|11    |MUXF8     |    26|
+|12    |RAM16X1S  |    32|
+|13    |RAM256X1S |    32|
+|14    |RAM32X1S  |    32|
+|15    |FDE_1     |    64|
+|16    |FDRE      |  1840|
+|17    |FDRE_1    |    32|
+|18    |FD_1      |    12|
+|19    |LD        |   258|
+|20    |LDC       |    31|
+|21    |LDP       |     2|
+|22    |IBUF      |     2|
+|23    |OBUF      |   128|
++------+----------+------+
+
+Report Instance Areas: 
++------+--------------------------+------------------+------+
+|      |Instance                  |Module            |Cells |
++------+--------------------------+------------------+------+
+|1     |top                       |                  |  7040|
+|2     |  PC                      |ProgramCounter    |    32|
+|3     |  IM                      |InstructionMemory |   199|
+|4     |  IFIDReg                 |IFIDRegister      |   129|
+|5     |  BranchALU               |ALU32Bit__1       |  1218|
+|6     |  SignExtendOrRD2         |Mux32Bit4To1__1   |    32|
+|7     |  MuxToAOnALU             |Mux32Bit4To1__2   |    32|
+|8     |  MuxToBOnALU             |Mux32Bit4To1__3   |    32|
+|9     |  MainALU                 |ALU32Bit          |  1218|
+|10    |  HiLoRegister1           |HiLoRegister      |   416|
+|11    |  MuxForExecutionResult   |Mux32Bit4To1__4   |    32|
+|12    |  EXMERegister1           |EXMERegister      |   162|
+|13    |  ReadDMMux               |Mux32Bit4To1__5   |    32|
+|14    |  MEWBRegister1           |MEWBRegister      |   152|
+|15    |  JumpMux                 |Mux32Bit4To1__6   |    32|
+|16    |  Registers               |RegisterFile      |  1920|
+|17    |  BranchFuckingComparator |BranchComparator  |   105|
+|18    |  IDEXRegister1           |IDEXRegister      |   323|
+|19    |  MuxToWriteMem           |Mux32Bit4To1__7   |    32|
+|20    |  Cont                    |Controller        |   314|
+|21    |  MemForward              |Mux32Bit4To1__8   |    32|
+|22    |  ForwardingUnit          |Forward           |    30|
+|23    |  H1                      |HazardDetection   |    22|
+|24    |  RD1HazardMux            |Mux32Bit4To1__9   |    32|
+|25    |  RD2HazardMux            |Mux32Bit4To1      |    32|
+|26    |  ADD4                    |PCAdder           |     8|
+|27    |  PCSrcMux                |Mux32Bit2To1_1    |    33|
+|28    |  rsORrt                  |Mux32Bit2To1_3    |     5|
+|29    |  rtORrs                  |Mux32Bit2To1_5    |     5|
+|30    |  AndiMux                 |Mux32Bit2To1      |     1|
+|31    |  DM                      |DataMemory        |   163|
+|32    |  MuxtoHiLoRegister       |Mux64Bit4To1      |    64|
+|33    |  MyCtlMux                |Mux32Bit2To1_0    |    32|
+|34    |  RightMostMux            |Mux32Bit2To1_2    |    32|
+|35    |  rtORrd                  |Mux32Bit2To1_4    |     5|
++------+--------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 915.031 ; gain = 602.570
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 463 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 915.031 ; gain = 244.207
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 915.031 ; gain = 602.570
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 999 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 495 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 64 instances
+  FDRE_1 => FDRE (inverted pins: C): 32 instances
+  FD_1 => FDRE (inverted pins: C): 12 instances
+  LD => LDCE: 258 instances
+  LDC => LDCE: 31 instances
+  LDP => LDPE: 2 instances
+  RAM16X1S => RAM32X1S (RAMS32): 32 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 32 instances
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+130 Infos, 317 Warnings, 32 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:08 . Memory (MB): peak = 915.031 ; gain = 615.582
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/matth/Documents/ECE369A_ComputerFundamentals/FinalProject/FinalProject.runs/synth_1/Datapath.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Datapath_utilization_synth.rpt -pb Datapath_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 915.031 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 27 12:29:10 2020...
