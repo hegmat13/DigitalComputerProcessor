@@ -1,7 +1,7 @@
 # DigitalComputerProcessor Project Description
-My partner and I created from scratch a fully pipe-lined digital computer datapath for our Fundamentals of Computer Organization Class, which we programmed solely in verilog and implemented in Xlinx's Vivado Design Suite 2017.2. Our digital datapath optimally runs sets of MIPS Assembly instructions in hex for conducting a full search based motion estimation with a variable block size. We divided up the process into 5 different sections to better keep track of the values on the wires and improve functionality; these sections from left to right were the Instruction Fetch (IF), Instruction Decode (ID), Execution (EX), Memory (ME), and Write Back (WB) stages. Arithmetic calculations were achieved through our Arithmetic Logic Unit (ALU) and we utilized muxes in order to select the necessary value needed for the successful completion of each instruction. The correct value to be selected by each mux was determined by our Controller component. Optimization of the speed and resource usage of the processor was accomplished through pipe-lined registers, forwarding, and hazard detection.
+My partner and I created from scratch a fully pipe-lined digital computer datapath for our Fundamentals of Computer Organization Class, which we programmed solely in verilog and implemented in Xlinx's Vivado Design Suite 2017.2. Our digital datapath optimally runs sets of MIPS Assembly instructions in hex for conducting a full search based motion estimation with a variable block size. We divided up the process into 5 different sections to better keep track of the values on the wires and improve functionality; these sections from left to right were the Instruction Fetch (IF), Instruction Decode (ID), Execution (EX), Memory (ME), and Write Back (WB) stages. Arithmetic calculations were achieved through our Arithmetic Logic Unit (ALU) and we utilized muxes in order to select the necessary value needed for the successful completion of each instruction. The correct value to be selected by each mux was determined by our Controller component. Optimization of the speed, limiting resource usage, and elimination of dependencies of the processor was accomplished through pipe-lined registers, forwarding, and hazard detection.
 
-# File Details in each Folder 
+# Folder and File Details
 
 ProjectDetailsAndImages: 
 
@@ -9,7 +9,19 @@ This folder contains a word document containing the specific project requirement
 
 Files for Labs 1-18:
 
-The bulk of all the verilog files created from earlier labs in the class can be found here. Almost all of the files represent a separate component that's instantiated in the DataPath.v file. Almost all of the component files have corresponding names to the labels on our datapath diagram images. All of our Muxes are controlled by signals sent from the Controller.v file. The beggining of the register file names are the stages they are inbetween, and there are four slotted in the five stages mentioned in the top description. 
+The bulk of all the verilog files created from earlier labs in the class can be found here. Almost all of the files represent a separate component that's instantiated in the DataPath.v file. Almost all of the component files have corresponding names to the labels on our datapath diagram images. All of our Muxes are controlled by signals sent from the Controller.v file. The beggining of the register file names are the stages they are inbetween, and there are four slotted in the five stages mentioned in the top description. Splitting up the digital processor into piplines greatly increased it's speed since 5 instructions could be executed in the pipline per clock cycle. 
+
+FinalProject.srcs:
+
+This folder contains the newest files that we created for the optimization of the processors speed and resource usage. The forwarding unit (Forward.v) eliminated dependencies present in closely timed instructions that utilized the same registers. Any dependency cases that the forwarding unit could not resolve, the hazard detection unit (HazardDetection.v) took care of. Finally, the data memory unit (data_memory.v) was used to store all the arithmetic and resulting register values. 
+
+FinalProject.xpr:
+
+This opens up the vivado design suite and adds all the files to the verilog project.
+
+All other folders:
+
+All of these other folders were created by verilog in its initial setup and will vary if the source files are used in the creation of a new project. 
 
 
 
